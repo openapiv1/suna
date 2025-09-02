@@ -2,7 +2,7 @@
 
 # Kortix – Open Source Platform to Build, Manage and Train AI Agents
 
-![Kortix Screenshot](frontend/public/banner.png)
+![Kortix Screenshot](public/banner.png)
 
 **The complete platform for creating autonomous AI agents that work for you**
 
@@ -144,6 +144,8 @@ Supabase-powered data layer handling authentication, user management, agent conf
 
 ## 🚀 Quick Start
 
+**⚡ Unified Architecture**: Kortix now runs as a single Next.js application with the backend services integrated. No more separate frontend/backend directories!
+
 Get your Kortix platform running in minutes with our automated setup wizard:
 
 ### 1️⃣ Clone the Repository
@@ -161,7 +163,13 @@ The wizard will guide you through setup with three options:
 - **🐳 Docker Compose** - Containerized setup
 - **🔧 Manual** - Traditional manual service management
 
-### 3️⃣ Start the Platform
+### 3️⃣ Start the Frontend Application
+```bash
+npm install
+npm run dev
+```
+
+### 4️⃣ Start the Backend Services (in a separate terminal)
 ```bash
 python start.py
 ```
